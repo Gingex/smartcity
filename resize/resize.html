@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('resize',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            width: {value:""},
+            heigth: {value:""},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"resize";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="resize">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-width"><i class="icon-tag"></i> Width</label>
+        <input type="text" id="node-input-width" placeholder="Width">
+    </div>
+    <div class="form-row">
+        <label for="node-input-heigth"><i class="icon-tag"></i> Heigth</label>
+        <input type="text" id="node-input-heigth" placeholder="Heigth">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="resize">
+    <p>A node to resize images using OpenCV</p>
+</script> 

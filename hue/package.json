@@ -1,0 +1,19 @@
+{
+  "name": "node-red-contrib-hue",
+  "version": "1.0.0",
+  "description": "Extract the predominant hue of an image using OpenCV",
+  "dependencies": {
+    "opencv4nodejs": "/usr/local/lib/node_modules/opencv4nodejs"
+  },
+  "main": "hue.js",
+  "keywords": [
+    "[]"
+  ],
+  "author": "",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "hue": "hue.js"
+    }
+  }
+}

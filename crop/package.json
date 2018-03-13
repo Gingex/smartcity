@@ -1,0 +1,19 @@
+{
+  "name": "node-red-contrib-crop",
+  "version": "1.0.0",
+  "description": "Crop an image using OpenCV",
+  "dependencies": {
+    "opencv4nodejs": "/usr/local/lib/node_modules/opencv4nodejs"
+  },
+  "main": "crop.js",
+  "keywords": [
+    "[]"
+  ],
+  "author": "",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "crop": "crop.js"
+    }
+  }
+}
